@@ -143,9 +143,9 @@ business-churn-prediction/
 |-- configs/
 |   `-- train_config.yaml
 |-- data/
-|   |-- README.md
-|   |-- sample/
-|   `-- telco_churn.csv
+|   |-- README.md           public data documentation
+|   |-- sample/             public-safe sample data only
+|   `-- telco_churn.csv     local-only; ignored by Git until provenance/licence is confirmed
 |-- docs/
 |   |-- business_context.md
 |   |-- data_card.md
