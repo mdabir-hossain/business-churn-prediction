@@ -68,15 +68,15 @@ Safe to publish after final manual staging review:
 - `scripts/`
 - `src/churn_model/`
 - `tests/`
-- `BUSINESS_CHURN_PROJECT_AUDIT.md`
-- `BUSINESS_CHURN_PHASE_1_REPORT.md`
-- `BUSINESS_CHURN_PHASE_2_ENV_REPORT.md`
-- `BUSINESS_CHURN_PHASE_3_SOURCE_REPORT.md`
-- `BUSINESS_CHURN_PHASE_4_LEAKAGE_VALIDATION_REPORT.md`
-- `BUSINESS_CHURN_PHASE_5_MODEL_EVAL_REPORT.md`
-- `BUSINESS_CHURN_PHASE_5B_EXECUTION_REPORT.md`
-- `BUSINESS_CHURN_PHASE_6_PORTFOLIO_REPORT.md`
-- `BUSINESS_CHURN_PUBLIC_GITHUB_REVIEW.md`
+- `docs/project_reports/BUSINESS_CHURN_PROJECT_AUDIT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_1_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_2_ENV_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_3_SOURCE_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_4_LEAKAGE_VALIDATION_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_5_MODEL_EVAL_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_5B_EXECUTION_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PHASE_6_PORTFOLIO_REPORT.md`
+- `docs/project_reports/BUSINESS_CHURN_PUBLIC_GITHUB_REVIEW.md`
 
 The saved metrics and figures are aggregate artifacts only. They do not contain row-level predictions or customer-level records, so they are suitable for public portfolio documentation.
 
@@ -214,11 +214,11 @@ git add docs
 git add notebooks/01_eda_modeling.ipynb
 git add reports/business_summary.md reports/metrics reports/figures
 git add scripts src tests
-git add BUSINESS_CHURN_PROJECT_AUDIT.md
-git add BUSINESS_CHURN_PHASE_1_REPORT.md BUSINESS_CHURN_PHASE_2_ENV_REPORT.md BUSINESS_CHURN_PHASE_3_SOURCE_REPORT.md
-git add BUSINESS_CHURN_PHASE_4_LEAKAGE_VALIDATION_REPORT.md BUSINESS_CHURN_PHASE_5_MODEL_EVAL_REPORT.md
-git add BUSINESS_CHURN_PHASE_5B_EXECUTION_REPORT.md BUSINESS_CHURN_PHASE_6_PORTFOLIO_REPORT.md
-git add BUSINESS_CHURN_PUBLIC_GITHUB_REVIEW.md
+git add docs/project_reports/BUSINESS_CHURN_PROJECT_AUDIT.md
+git add docs/project_reports/BUSINESS_CHURN_PHASE_1_REPORT.md docs/project_reports/BUSINESS_CHURN_PHASE_2_ENV_REPORT.md docs/project_reports/BUSINESS_CHURN_PHASE_3_SOURCE_REPORT.md
+git add docs/project_reports/BUSINESS_CHURN_PHASE_4_LEAKAGE_VALIDATION_REPORT.md docs/project_reports/BUSINESS_CHURN_PHASE_5_MODEL_EVAL_REPORT.md
+git add docs/project_reports/BUSINESS_CHURN_PHASE_5B_EXECUTION_REPORT.md docs/project_reports/BUSINESS_CHURN_PHASE_6_PORTFOLIO_REPORT.md
+git add docs/project_reports/BUSINESS_CHURN_PUBLIC_GITHUB_REVIEW.md
 ```
 
 Review what would be committed:
