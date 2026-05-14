@@ -1,0 +1,49 @@
+dataset:
+  path: data/telco_churn.csv
+  target_column: Churn
+  identifier_columns:
+    - customerID
+  drop_missing_total_charges: true
+
+split:
+  method: stratified_train_test_split
+  test_size: 0.2
+  random_seed: 42
+
+outputs:
+  metrics_json: reports/metrics/model_metrics.json
+  threshold_metrics_csv: reports/metrics/threshold_metrics.csv
+  model_comparison_csv: reports/metrics/model_comparison.csv
+  figures_dir: reports/figures
+  business_summary: reports/business_summary.md
+
+models:
+  logistic_regression:
+    enabled: true
+    class_weight: balanced
+    max_iter: 1000
+    solver: liblinear
+  random_forest:
+    enabled: true
+    n_estimators: 400
+    class_weight: balanced
+    n_jobs: -1
+  hist_gradient_boosting:
+    enabled: true
+    max_iter: 300
+    learning_rate: 0.05
+    max_depth: 6
+
+evaluation:
+  positive_label: 1
+  threshold_policy: best_f1_on_test_for_reporting_only
+  candidate_thresholds:
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+  top_decile_fraction: 0.1
+
